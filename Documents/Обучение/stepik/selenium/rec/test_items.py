@@ -7,4 +7,4 @@ def test_should_be_visible_button(browser):
     time.sleep(15)
     button = browser.find_element_by_css_selector('button.btn.btn-lg.btn-primary.btn-add-to-basket')
     btn_text = button.text
-    assert btn_text == 'Añadir al carrito'
+    assert btn_text == 'Añadir al carrito', 'Button is not found on the page'
